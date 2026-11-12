@@ -43,25 +43,90 @@
     }
   </style>
 </head>
-<body class="antialiased selection:bg-emerald-800 selection:text-white min-h-screen flex flex-col justify-between">
+<body class="antialiased selection:bg-emerald-800 selection:text-white min-h-screen flex flex-col justify-between pb-10">
 
   <!-- Header / Banner Superior -->
-  <header class="islamic-pattern text-white shadow-lg">
-    <div class="max-w-md mx-auto px-4 py-6 text-center">
-      <span class="text-xs uppercase tracking-widest text-amber-300 font-semibold">Toulouse, Francia</span>
-      <h1 class="text-2xl font-bold mt-1 font-arabic">جامع الميراي</h1>
-      <h2 class="text-lg font-semibold tracking-wide">Gran Mezquita del Mirail</h2>
-      <p class="text-xs text-emerald-100 mt-2">Bienvenido a la aplicación oficial de la comunidad</p>
+  <header class="islamic-pattern text-white shadow-lg rounded-b-3xl">
+    <div class="max-w-md mx-auto px-4 py-8 text-center">
+      <span class="text-xs uppercase tracking-widest text-amber-300 font-semibold bg-emerald-900/60 px-3 py-1 rounded-full border border-amber-500/30">Toulouse, Francia</span>
+      <h1 class="text-3xl font-bold mt-3 font-arabic">جامع الميراي</h1>
+      <h2 class="text-lg font-semibold tracking-wide text-emerald-50">Gran Mezquita del Mirail</h2>
+      <p class="text-xs text-emerald-200 mt-1">Aplicación oficial de la comunidad</p>
     </div>
   </header>
 
   <!-- Contenido Principal -->
-  <main class="max-w-md mx-auto px-4 py-6 w-full space-y-4">
-    <div class="bg-white p-6 rounded-2xl shadow-sm border border-stone-200 text-center">
-      <div class="w-12 h-12 bg-emerald-50 text-emerald-800 rounded-full flex items-center justify-center mx-auto mb-3 text-xl font-bold">🕌</div>
-      <h3 class="font-bold text-stone-800 text-lg">App en funcionamiento</h3>
-      <p class="text-sm text-stone-600 mt-1">La aplicación de la mezquita se ha cargado correctamente en GitHub Pages.</p>
-    </div>
+  <main class="max-w-md mx-auto px-4 py-6 w-full space-y-6">
+
+    <!-- Tarjeta de Horarios de Oración -->
+    <section class="bg-white rounded-2xl shadow-sm border border-stone-200 overflow-hidden">
+      <div class="bg-emerald-900 text-white px-5 py-3.5 flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+          <span class="text-lg">🕌</span>
+          <h3 class="font-bold text-sm tracking-wide">Horarios de Oración</h3>
+        </div>
+        <span class="text-xs bg-amber-500 text-stone-950 font-bold px-2.5 py-1 rounded-lg">Hoy</span>
+      </div>
+      
+      <div class="divide-y divide-stone-100 text-sm">
+        <div class="px-5 py-3 flex justify-between items-center">
+          <span class="font-medium text-stone-700">Fajr (Alba)</span>
+          <span class="font-bold text-emerald-900">06:15</span>
+        </div>
+        <div class="px-5 py-3 flex justify-between items-center">
+          <span class="font-medium text-stone-700">Dhuhr (Mediodía)</span>
+          <span class="font-bold text-emerald-900">13:30</span>
+        </div>
+        <div class="px-5 py-3 flex justify-between items-center">
+          <span class="font-medium text-stone-700">Asr (Tarde)</span>
+          <span class="font-bold text-emerald-900">16:45</span>
+        </div>
+        <div class="px-5. py-3 flex justify-between items-center bg-amber-50/60">
+          <span class="font-bold text-amber-900 flex items-center gap-1">Maghrib (Puesta) ✨</span>
+          <span class="font-bold text-amber-900">19:10</span>
+        </div>
+        <div class="px-5 py-3 flex justify-between items-center">
+          <span class="font-medium text-stone-700">Isha (Noche)</span>
+          <span class="font-bold text-emerald-900">20:40</span>
+        </div>
+        <div class="px-5 py-3.5 bg-stone-50 flex justify-between items-center border-t border-stone-200">
+          <span class="font-semibold text-stone-800 text-xs uppercase tracking-wider">Jumu'ah (Viernes)</span>
+          <span class="font-bold text-amber-800 text-xs">13:15 / 14:15</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Avisos y Próximos Eventos -->
+    <section class="bg-white p-5 rounded-2xl shadow-sm border border-stone-200">
+      <h3 class="font-bold text-stone-900 text-sm mb-3 flex items-center gap-2">
+        <span>📢</span> Avisos de la Comunidad
+      </h3>
+      <div class="space-y-3">
+        <div class="p-3 bg-stone-50 rounded-xl border-l-4 border-amber-500 text-xs space-y-1">
+          <p class="font-bold text-stone-800">Conferencia de fin de semana</p>
+          <p class="text-stone-600">Este sábado después de la oración de Maghrib tendremos una conferencia abierta a todo el público.</p>
+        </div>
+        <div class="p-3 bg-stone-50 rounded-xl border-l-4 border-emerald-700 text-xs space-y-1">
+          <p class="font-bold text-stone-800">Clases de Corán</p>
+          <p class="text-stone-600">Inscripciones abiertas para los cursos infantiles de los fines de semana.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Enlaces Rápidos / Botones de Acción -->
+    <section class="grid grid-cols-2 gap-3">
+      <a href="https://maps.google.com/?q=Grande+Mosquee+du+Mirail+Toulouse" target="_blank" class="p-4 bg-white rounded-2xl shadow-sm border border-stone-200 text-center hover:border-emerald-700 transition">
+        <span class="text-2xl mb-1 block">📍</span>
+        <span class="font-bold text-stone-800 text-xs block">Cómo llegar</span>
+        <span class="text-[10px] text-stone-500">Abrir en Mapas</span>
+      </a>
+      <a href="tel:+33000000000" class="p-4 bg-white rounded-2xl shadow-sm border border-stone-200 text-center hover:border-emerald-700 transition">
+        <span class="text-2xl mb-1 block">📞</span>
+        <span class="font-bold text-stone-800 text-xs block">Contacto</span>
+        <span class="text-[10px] text-stone-500">Llamar a la mezquita</span>
+      </a>
+    </section>
+
   </main>
 
   <!-- Footer -->
