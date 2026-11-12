@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <title>Gran Mezquita del Mirail — Toulouse</title>
+  
+  <!-- PWA & App Nativa iOS / Android -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Mezquita Mirail" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="theme-color" content="#064e3b" />
+  <link id="apple-touch-icon" rel="apple-touch-icon" />
+  <link id="pwa-manifest" rel="manifest" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #faf8f5;
+      color: #1c1917;
+      padding-top: env(safe-area-inset-top);
+      padding-bottom: env(safe-area-inset-bottom);
+      -webkit-tap-highlight-color: transparent;
+    }
+    .font-arabic {
+      font-family: 'Amiri', serif;
+    }
+    .islamic-pattern {
+      background-color: #064e3b;
+      background-image: radial-gradient(rgba(217, 119, 6, 0.16) 1px, transparent 1px),
+                        radial-gradient(rgba(217, 119, 6, 0.16) 1px, #064e3b 1px);
+      background-size: 24px 24px;
+      background-position: 0 0, 12px 12px;
+    }
+    .gold-gradient {
+      background: linear-gradient(135deg, #d97706 0%, #f59e0b 50%, #b45309 100%);
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-emerald-800 selection:text-white">
+
+  <!-- Banner de Instalación PWA (iOS / Android) -->
+  <div id="install-banner" class="hidden bg-amber-50 border-b border-amber-200 px-4 py-2.5 text-xs text-amber-950 flex
